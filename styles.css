@@ -1,0 +1,158 @@
+:root {
+  --primary: #00b8c9;
+  --primary-light: #e8f9fa;
+  --text-dark: #0f1a24;
+  --text-light: #4b5563;
+  --border: #d9e0e6;
+  --bg: #f7f9fb;
+  --radius: 10px;
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+main {
+  flex: 1; /* Hace que el contenido ocupe el espacio disponible */
+}
+
+/* Estilo para los íconos FontAwesome */
+.icon {
+  font-size: 2rem;  /* Tamaño del ícono */
+  color: var(--primary);  /* Color del ícono */
+  margin-right: 1rem;  /* Espacio entre el ícono y el texto */
+}
+
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text-dark);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ocupa toda la pantalla */
+}
+
+header.header {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 1.8rem 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header.header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  letter-spacing: 0.5px;
+}
+
+header.header p {
+  margin: 5px 0 0;
+  font-weight: 300;
+}
+
+.container {
+  width: 95%;
+  max-width: 950px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Tarjetas horizontales */
+.card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  overflow: hidden;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transform: translateY(-2px);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  background: var(--primary-light);
+}
+
+.card-header img.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.card-header h3 {
+  color: var(--primary);
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.card-header p {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin: 0.2rem 0 0;
+}
+
+/* Contenido desplegable */
+.card-content {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid var(--border);
+  display: none;
+  animation: fadeIn 0.3s ease;
+}
+
+.card-content.open {
+  display: block;
+}
+
+.card-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 0.8rem 0;
+}
+
+.card-content p {
+  margin: 0.5rem 0;
+  color: var(--text-light);
+  line-height: 1.5;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(-5px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* --- FOOTER --- */
+.footer {
+  background: var(--primary-light);
+  text-align: center;
+  padding: 1.2rem;
+  color: var(--text-dark);
+  font-size: 0.9rem;
+  border-top: 1px solid var(--border);
+  margin-top: 2rem;
+}
+
+.footer strong {
+  color: var(--primary);
+}
