@@ -6,7 +6,7 @@ const cardsData = [
     content: `
       <p>El <strong>Portal de Autogestión de Proveedores</strong> es una herramienta diseñada para que los proveedores gestionen de manera autónoma sus certificados de impuestos. 
       Facilita el acceso a documentos tributarios y agiliza los procesos administrativos sin depender de la intervención del área contable.</p>
-      <img src="img/descarga.jpg" alt="foto" style="width: 50%; height: auto; border-radius: 10px;">
+      <img src="img/cruce_terceros/descarga.jpg" alt="foto" style="width: 50%; height: auto; border-radius: 10px;">
     `
   },
   {
@@ -81,32 +81,32 @@ const cardsData = [
       que se ajustarán en futuras actualizaciones según los nuevos tipos definidos por el área contable.</p>
       <br>
       <p>1. Creación de parametro en el <strong>MODULO GENERAL</strong></p>
-      <center><img src="img/tran_general.jpg" alt="foto" style="width: 100%; height: auto; border-radius: 10px;"></center>
+      <center><img src="img/cruce_terceros/tran_general.jpg" alt="foto" style="width: 100%; height: auto; border-radius: 10px;"></center>
       <p>2. Ingresar a menú <strong>CRUCE TERCEROS</strong></p>
-      <center><img src="img/menu_cruce_ter.jpg" alt="foto" style="width: 100%; height: auto; border-radius: 10px;"></center>
+      <center><img src="img/cruce_terceros/menu_cruce_ter.jpg" alt="foto" style="width: 100%; height: auto; border-radius: 10px;"></center>
       <p>3. Diligenciar datos de los <strong>CLIENTES</strong></p>
-      <center><img src="img/diligen_con_mano.jpg" alt="foto" style="width: 100%; height: auto; border-radius: 10px;"></center>
+      <center><img src="img/cruce_terceros/diligen_con_mano.jpg" alt="foto" style="width: 100%; height: auto; border-radius: 10px;"></center>
       <p>4. Diligenciar vin/chasis del <strong>VEHICULO</strong></p>
-      <center><img src="img/vin_pant_4.jpg" alt="foto" style="width: 100%; height: auto; border-radius: 10px;"></center>
+      <center><img src="img/cruce_terceros/vin_pant_4.jpg" alt="foto" style="width: 100%; height: auto; border-radius: 10px;"></center>
       <p>5. Validar que todos los montos sean <strong>IGUALES</strong></p>
-      <center><img src="img/valores_iguales_2_pantalla.jpg" alt="foto" style="width: 100%; height: auto; border-radius: 10px;"></center>
+      <center><img src="img/cruce_terceros/valores_iguales_2_pantalla.jpg" alt="foto" style="width: 100%; height: auto; border-radius: 10px;"></center>
       <p>6. Dar click en el boton de <strong>SOLICITUD</strong> para generar el documento a firmar por el cliente que Autoriza</p>
-      <center><img src="img/boton_soli_3_panta.jpg" alt="foto" style="width: 100%; height: auto; border-radius: 10px;"></center>
+      <center><img src="img/cruce_terceros/boton_soli_3_panta.jpg" alt="foto" style="width: 100%; height: auto; border-radius: 10px;"></center>
       <p>7. Documento que se genera para la <strong>FIRMA</strong></p>
-      <center><img src="img/solicitud_generada.jpg" alt="foto" style="width: 100%; height: auto; border-radius: 10px;"></center>
+      <center><img src="img/cruce_terceros/solicitud_generada.jpg" alt="foto" style="width: 100%; height: auto; border-radius: 10px;"></center>
       <p>8. Debe adjuntar la carta firmada para poder <strong>APLICAR LA TRANSACCIÓN</strong></p>
       <p>8.1 Error al no tener adjunto</p>
-      <center><img src="img/mensaj_sin_adjunt.jpg" alt="foto" style="width: 100%; height: auto; border-radius: 10px;"></center>
+      <center><img src="img/cruce_terceros/mensaj_sin_adjunt.jpg" alt="foto" style="width: 100%; height: auto; border-radius: 10px;"></center>
       <p>8.2 Dar click en el boton "Adjuntos"</p>
-      <center><img src="img/boton_adjunt.jpg" alt="foto" style="width: 100%; height: auto; border-radius: 10px;"></center>
+      <center><img src="img/cruce_terceros/boton_adjunt.jpg" alt="foto" style="width: 100%; height: auto; border-radius: 10px;"></center>
       <p>8.3 Cargar Adjunto</p>
-      <center><img src="img/pantalla_carga.jpg" alt="foto" style="width: 100%; height: auto; border-radius: 10px;"></center>
+      <center><img src="img/cruce_terceros/pantalla_carga.jpg" alt="foto" style="width: 100%; height: auto; border-radius: 10px;"></center>
       <p>8.4 Mensaje de Exito</p>
-      <center><img src="img/mensaje_exito.jpg" alt="foto" style="width: 100%; height: auto; border-radius: 10px;"></center>
+      <center><img src="img/cruce_terceros/mensaje_exito.jpg" alt="foto" style="width: 100%; height: auto; border-radius: 10px;"></center>
       <p>9. Dar click en el botón de <strong>APLICAR</strong></p>
-      <center><img src="img/boton_aplicar.jpg" alt="foto" style="width: 100%; height: auto; border-radius: 10px;"></center>
+      <center><img src="img/cruce_terceros/boton_aplicar.jpg" alt="foto" style="width: 100%; height: auto; border-radius: 10px;"></center>
       <p>9.1 Generación del <strong>DOCUMENTO DEL CRUCE</strong></p>
-      <center><img src="img/finalizar_proce.jpg" alt="foto" style="width: 100%; height: auto; border-radius: 10px;"></center>
+      <center><img src="img/cruce_terceros/finalizar_proce.jpg" alt="foto" style="width: 100%; height: auto; border-radius: 10px;"></center>
     `
   },
   {
