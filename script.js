@@ -155,7 +155,8 @@ const cardsData = [
     content: `
       <p>En la pantalla principal del módulo <strong>SOCASE</strong> se habilita una nueva función que permite visualizar 
       las <strong>sesiones activas</strong> de usuarios en tiempo real. 
-      Esta herramienta facilita la supervisión de accesos y el control de actividad en la plataforma.</p>
+      Esta herramienta facilita la supervisión de accesos y cantidad de pantallas de SOCASE activas de cada usuario.</p>
+      <center><img src="img/sesiones/sesiones.jpg" alt="foto" style="width: 100%; height: auto; border-radius: 10px;"></center>
     `
   }
 ];
