@@ -156,3 +156,23 @@ header.header p {
 .footer strong {
   color: var(--primary);
 }
+
+/* Estilo para convertir el enlace de descarga en un botón */
+.download-button {
+    /* Fondo y bordes */
+    display: inline-block; /* Permite aplicar padding y dimensiones */
+    padding: 8px 15px; /* Espaciado interno */
+    background-color: var(--primary); /* Color de fondo azul (ejemplo) */
+    color: var(--primary-light) !important; 
+    text-decoration: none; /* Quitar el subrayado predeterminado del enlace */
+    border-radius: 5px; /* Bordes redondeados */
+    font-weight: bold; /* Texto más grueso */
+    transition: background-color 0.3s ease; /* Transición suave para el hover */
+    margin-left: 10px; /* Separación del texto "aqui:" */
+}
+
+/* Efecto al pasar el ratón (hover) */
+.download-button:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el ratón */
+    cursor: pointer;
+}

@@ -6,7 +6,14 @@ const cardsData = [
     content: `
       <p>El <strong>Portal de Autogestión de Proveedores</strong> es una herramienta diseñada para que los proveedores gestionen de manera autónoma sus certificados de impuestos. 
       Facilita el acceso a documentos tributarios y agiliza los procesos administrativos sin depender de la intervención del área contable.</p>
-      <img src="img/cruce_terceros/descarga.jpg" alt="foto" style="width: 50%; height: auto; border-radius: 10px;">
+      <center><img src="img/proveedores/ingreso.jpg" alt="foto" style="width: 90%; height: auto; border-radius: 10px;"></center>
+      <p>Puede ingresar al <strong>Portal de Autogestión de Proveedores</strong> siguiendo este link:</p>
+      <p><a href="https://app.corporativo-colombia.co/mtk/r/wsmtk/f_autprov/login?session=11422904504509">https://app.corporativo-colombia.co/mtk/r/wsmtk/f_autprov/login?session=11422904504509</a></p>
+      <p>Para mas información puede descargar el <strong>Manual</strong> aqui: 
+           <a href="img/proveedores/Manual_proveedores.pdf" download="Manual_proveedores.pdf" class="download-button">
+               Descargar Manual
+           </a>
+       </p>
     `
   },
   {
