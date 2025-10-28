@@ -64,6 +64,11 @@ const cardsData = [
       <p>Se implementa un sistema de <strong>autorizaciones por usuario</strong> para modificar cuentas bancarias de clientes, empleados y proveedores. 
       Esta funcionalidad garantiza que solo usuarios con permisos explícitos puedan realizar modificaciones sensibles, 
       reforzando la seguridad de los datos financieros.</p>
+      <p>Para la pantalla CXP-Proveedores se debe solicitar el permiso para poder modificar cuentas bancarias de proveedores; en caso de no tenerlo, verá el campo bloqueado.</p>
+      <center><img src="img/cbanc/proveedores.jpg" alt="foto" style="width: 100%; height: auto; border-radius: 10px;"></center>
+      <p>En el caso de la pantalla CXC-Clientes se deberá solicitar el permiso para poder modificar cuentas de clientes o empleados dependiendo la clase del cliente, de lo contrario la cuenta bancaria se mostrara bloqueada.</p>
+      <center><img src="img/cbanc/clientes.jpg" alt="foto" style="width: 100%; height: auto; border-radius: 10px;"></center>
+
     `
   },
   {
@@ -71,9 +76,12 @@ const cardsData = [
     subtitle: "Control de montos y contratos según perfil de usuario",
     icon: "fa-solid fa-file-contract",
     content: `
-      <p>Se establece una política de <strong>límites por usuario</strong> en el módulo de Compras e Importaciones. 
-      Los usuarios sin autorización especial podrán aprobar montos de hasta 60 millones. 
-      Para valores superiores, será obligatoria la autorización del responsable designado y la adjunción de un contrato soporte.</p>
+      <p>Se establece una política de <strong>límites por usuario</strong> en el módulo de Compras e Importaciones. </p>
+      <ul>
+      <li><p>Los usuarios sin autorización especial podrán aprobar montos de hasta 6 millones. </p></li>
+      <li><p>Para valores superiores a 6 millones, se debera cargar adjuntos con minimo 3 cotizaciones.</p></li>
+      <li><p>Para montos superiores a 10 millones, se debera adjuntar un contrato, en caso contrario no permite realizar la orden.</p></li>
+      </ul>
     `
   },
   {
@@ -133,6 +141,12 @@ const cardsData = [
       <p>Se incorpora un nuevo campo en los <strong>tipos de transacción de cartera</strong> que obliga a registrar el número de chasis 
       para aquellas operaciones marcadas como <em>itemizadas</em>. 
       Esta medida mejora la trazabilidad de las operaciones relacionadas con inventarios de vehículos.</p>
+      <p>En la pantalla de tipos de transacciones del módulo <em>Cuentas X Cobrar⁣.</em></p>
+      <center><img src="img/cxctran/ruta.jpg" alt="foto" style="width: 100%; height: auto; border-radius: 10px;"></center>
+      <p>Se agrego el campo <strong>Itemizado</strong> para que las transacciones marcadas como Itemizados soliciten de forma obligatoria que sea asociado a un vin.</p>
+      <center><img src="img/cxctran/trans.jpg" alt="foto" style="width: 100%; height: auto; border-radius: 10px;"></center>
+      <p>En caso de no asociarlo, mostrará el siguiente mensaje:</p>
+      <center><img src="img/cxctran/mensaje.jpg" alt="foto" style="width: 100%; height: auto; border-radius: 10px;"></center>
     `
   },
   {
