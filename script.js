@@ -71,7 +71,7 @@ const cardsData = [
     subtitle: "Control de montos y contratos según perfil de usuario",
     icon: "fa-solid fa-file-contract",
     content: `
-      <p>Se establece una política de <strong>límites por usuario</strong> en el módulo de compras de servicios. 
+      <p>Se establece una política de <strong>límites por usuario</strong> en el módulo de Compras e Importaciones. 
       Los usuarios sin autorización especial podrán aprobar montos de hasta 60 millones. 
       Para valores superiores, será obligatoria la autorización del responsable designado y la adjunción de un contrato soporte.</p>
     `
@@ -153,6 +153,9 @@ const cardsData = [
       <p>Con el fin de fortalecer la seguridad y la integridad de la información, 
       se desactiva la edición y creación de registros en el <strong>Módulo de Cajeros</strong>. 
       A partir de ahora, este módulo operará únicamente en modo consulta.</p>
+      <center><img src="img/recibos/modulo.jpg" alt="foto" style="width: 100%; height: auto; border-radius: 10px;"></center>
+      <p>En esta ruta solo se podrá ejecutar la pantalla en modo consulta, de lo contrario mostrará este mensaje:</p>
+      <center><img src="img/recibos/mensaje.jpg" alt="foto" style="width: 100%; height: auto; border-radius: 10px;"></center>
     `
   },
   {
