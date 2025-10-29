@@ -84,6 +84,7 @@ const cardsData = [
       </ul>
       <p>El usuario deberá contar con el permiso COM-LOS con moneda y montos definidos para poder realizar el proceso. En caso de no contar con el permiso, el sistema generará el siguiente mensaje:</p>
       <center><img src="img/ordenes/autori_men.jpg" alt="foto" style="width: 100%; height: auto; border-radius: 10px;"></center>
+      <h1>Se deja a espera de solución con mensajes de error errados.</h1>
     `
   },
   {
