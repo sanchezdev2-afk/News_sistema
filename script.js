@@ -82,6 +82,8 @@ const cardsData = [
       <li><p>Para valores superiores a 6 millones, se debera cargar adjuntos con minimo 3 cotizaciones.</p></li>
       <li><p>Para montos superiores a 10 millones, se debera adjuntar un contrato, en caso contrario no permite realizar la orden.</p></li>
       </ul>
+      <p>El usuario deberá contar con el permiso COM-LOS con moneda y montos definidos para poder realizar el proceso. En caso de no contar con el permiso, el sistema generará el siguiente mensaje:</p>
+      <center><img src="img/ordenes/autori_men.jpg" alt="foto" style="width: 100%; height: auto; border-radius: 10px;"></center>
     `
   },
   {
