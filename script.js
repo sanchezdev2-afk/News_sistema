@@ -66,7 +66,7 @@ const cardsData = [
       <center><img src="img/difer_rex/filtro.jpg" alt="foto" style="width: 90%; height: auto; border-radius: 10px;"></center>
       <p>Una vez realizado el filtro, deberá dar en consulta para ver la información.</p>
       <p><strong>Nota: Si al seleccionar consultar no muestra información, es porque el periodo aún no ha sido calculado, por lo que deberá seleccionar el botón de "Calcular".</strong></p>
-
+      <p></p>
     `
   },
   {
