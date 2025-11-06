@@ -24,6 +24,14 @@ const cardsData = [
       <p>Se implementa un nuevo campo en el módulo de <strong>Cuentas por Pagar - Fiducia</strong>, 
       el cual permite identificar las facturas asociadas al campo <em>Pagador Alterno</em>. 
       Esta mejora busca optimizar la trazabilidad de las obligaciones y la gestión de pagos dentro del sistema.</p>
+      <p>En la pantalla de CXP - Proveedores se implementó el campo de "Pagador alterno" que al marcarse como si debiera indicar el Pagador Alterno.</p>
+      <center><img src="img/fiducia/paga_alter.jpg" alt="foto" style="width: 90%; height: auto; border-radius: 10px;"></center>
+      <p>Esto se aplica de la siguiente manera:</p>
+      <p>En la sigueinte pantalla del modulo CXP:</p>
+      <center><img src="img/fiducia/menu.jpg" alt="foto" style="width: 90%; height: auto; border-radius: 10px;"></center>
+      <p>Deberá consultar la persona del proveedor con facturas y, al marcarlas, mostrará el pagador alterno que tiene configurado en la pantalla anterior.</p>
+      <center><img src="img/fiducia/proceso.jpg" alt="foto" style="width: 90%; height: auto; border-radius: 10px;"></center>
+      <p>Este proceso permite que, en caso de que el proveedor disponga de una factura, el pago correspondiente se realice a su favor, pero se transfiera a la cuenta de un pagador alternativo, cumpliendo con la instrucción de redirigir el pago hacia dicha cuenta.</p>
     `
   },
   {
@@ -31,9 +39,16 @@ const cardsData = [
     subtitle: "Identificación individual de facturas con pagador alterno",
     icon: "fa-solid fa-user-tag",
     content: `
-      <p>Ahora el sistema permite registrar y visualizar el <strong>Pagador Alterno</strong> en facturas individuales del módulo 
-      <strong>CXP Fiducia</strong>. Esta actualización mejora el control sobre las transacciones y 
-      proporciona mayor transparencia en la gestión de pagos específicos.</p>
+      <p>Se implementa el mismo proceso del módulo anterior, pero de forma 1 a 1, permitiendo actualizar el pagador alterno según sea necesario.</p>
+      <p>En la pantalla de CXP - Proveedores se implementó el campo de "Pagador alterno" que al marcarse como si debiera indicar el Pagador Alterno.</p>
+      <center><img src="img/fiducia/paga_alter.jpg" alt="foto" style="width: 90%; height: auto; border-radius: 10px;"></center>
+      <p>Esto se aplica de la siguiente manera:</p>
+      <p>En la sigueinte pantalla del modulo CXP:</p>
+      <center><img src="img/fiducia/menu.jpg" alt="foto" style="width: 90%; height: auto; border-radius: 10px;"></center>
+      <p>Deberá consultar la persona del proveedor con facturas y, al marcarlas, mostrará el pagador alterno que podrá ser modificado al desplegar la lista de valores.</p>
+      <center><img src="img/fiducia/cambio_alter.jpg" alt="foto" style="width: 90%; height: auto; border-radius: 10px;"></center>
+      <p>Permitiendo el envío a diferentes cuentas según sea necesario.</p>
+      <p><strong>Nota: Se nos informó que no se realizará el proceso de esta forma hasta próximas validaciones.</strong></p>
     `
   },
   {
@@ -44,6 +59,14 @@ const cardsData = [
       <p>Se incorpora una validación contable solicitada por la Dirección Financiera para el seguimiento del <strong>PYG en compras de divisas</strong>. 
       Este proceso realiza una doble validación de los valores contables entre los reportes estándar y los reexpresados, 
       garantizando la exactitud en los registros de diferencia en cambio.</p>
+      <p>Esto se vera reflejado en el módulo de Contabilidad en la opción Procesos - Diferencia, en cambio, reexpresada.</p>
+      <center><img src="img/difer_rex/menu.jpg" alt="foto" style="width: 90%; height: auto; border-radius: 10px;"></center>
+      <p>En esta pantalla, podrá consultar las diferencias generadas al realizar el cambio de divisas entre las cuentas, visualizando las ganancias o pérdidas correspondientes a cada una de ellas.</p>
+      <p>Deberá ingresar el periodo, tipo, contabilidad y la fecha valor cambio para consultar.</p>
+      <center><img src="img/difer_rex/filtro.jpg" alt="foto" style="width: 90%; height: auto; border-radius: 10px;"></center>
+      <p>Una vez realizado el filtro, deberá dar en consulta para ver la información.</p>
+      <p><strong>Nota: Si al seleccionar consultar no muestra información, es porque el periodo aún no ha sido calculado, por lo que deberá seleccionar el botón de "Calcular".</strong></p>
+
     `
   },
   {
