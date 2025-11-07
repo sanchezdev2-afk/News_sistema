@@ -59,18 +59,12 @@ const cardsData = [
       <p>Se incorpora una validación contable solicitada por la Dirección Financiera para el seguimiento del <strong>PYG en compras de divisas</strong>. 
       Este proceso realiza una doble validación de los valores contables entre los reportes estándar y los reexpresados, 
       garantizando la exactitud en los registros de diferencia en cambio.</p>
-      <p>Esto se vera reflejado en el módulo de Contabilidad en la opción Procesos - Diferencia, en cambio, reexpresada.</p>
-      <center><img src="img/difer_rex/menu.jpg" alt="foto" style="width: 90%; height: auto; border-radius: 10px;"></center>
-      <p>En esta pantalla, podrá consultar las diferencias generadas al realizar el cambio de divisas entre las cuentas, visualizando las ganancias o pérdidas correspondientes a cada una de ellas.</p>
-      <p>Deberá ingresar el periodo, tipo, contabilidad y la fecha valor cambio para consultar.</p>
-      <center><img src="img/difer_rex/filtro.jpg" alt="foto" style="width: 90%; height: auto; border-radius: 10px;"></center>
-      <p>Una vez realizado el filtro, deberá dar en consulta para ver la información.</p>
-      <p><strong>Nota: Si al seleccionar consultar no muestra información, es porque el periodo aún no ha sido calculado, por lo que deberá seleccionar el botón de "Calcular".</strong></p>
-      <p></p>
+      <p>Se implementan los campos de Diferencia en cambio reexpresada en la pantalla de Cuentas contables, que indica </p>
+      <center><img src="img/difer_rex/cuentas.jpg" alt="foto" style="width: 90%; height: auto; border-radius: 10px;"></center>
     `
   },
   {
-    title: "Doble Marca en Pagos por Diferencia en Cambio Ejecutada",
+    title: "Diferencia en Cambio Ejecutada",
     subtitle: "Control reforzado en registros contables de pagos",
     icon: "fa-solid fa-coins",
     content: `
@@ -87,11 +81,28 @@ const cardsData = [
       <p>Se implementa un sistema de <strong>autorizaciones por usuario</strong> para modificar cuentas bancarias de clientes, empleados y proveedores. 
       Esta funcionalidad garantiza que solo usuarios con permisos explícitos puedan realizar modificaciones sensibles, 
       reforzando la seguridad de los datos financieros.</p>
-      <p>Para la pantalla CXP-Proveedores se debe solicitar el permiso para poder modificar cuentas bancarias de proveedores; en caso de no tenerlo, verá el campo bloqueado.</p>
-      <center><img src="img/cbanc/proveedores.jpg" alt="foto" style="width: 100%; height: auto; border-radius: 10px;"></center>
-      <p>En el caso de la pantalla CXC-Clientes se deberá solicitar el permiso para poder modificar cuentas de clientes o empleados dependiendo la clase del cliente, de lo contrario la cuenta bancaria se mostrara bloqueada.</p>
-      <center><img src="img/cbanc/clientes.jpg" alt="foto" style="width: 100%; height: auto; border-radius: 10px;"></center>
+      <p>En el módulo de CXP se implementaron nuevas autorizaciones para permitir la actualización de cuenta bancaria de los proveedores.</p>
+      <p>Las autorizaciones implementadas para este módulo son:</p>
+      <ul>
+        <li><strong>CXP-MCB:</strong> Este permiso otorga al usuario autorizado la capacidad de modificar las cuentas bancarias de los proveedores.</li>
+        <center><img src="img/bancaria/poveedor.jpg" alt="foto" style="width: 90%; height: auto; border-radius: 10px;"></center>
+        <li><strong>CXP-MCBEMP</strong> Este permiso otorga al usuario autorizado la capacidad de modificar las cuentas bancarias de aquellas personas que estén registradas tanto como proveedor como empleado en la sección de personas. Este permiso debe ser asignado exclusivamente a personal del área de Nómina.</li>
+        <center><img src="img/bancaria/personas.jpg" alt="foto" style="width: 90%; height: auto; border-radius: 10px;"></center>
+        <center><img src="img/bancaria/prove_emp.jpg" alt="foto" style="width: 90%; height: auto; border-radius: 10px;"></center>
+        <p>Si el usuario que ingresa no dispone del permiso correspondiente, la opción aparecerá bloqueada, tal como se ilustra en la imagen:</p>
+        <center><img src="img/bancaria/sin_permiso.jpg" alt="foto" style="width: 90%; height: auto; border-radius: 10px;"></center>
+      </ul>
 
+      <p>En el módulo de CXC se implementaron nuevas autorizaciones para permitir la actualización de cuenta bancaria de los clientes.</p>
+      <p>Las autorizaciones implementadas para este módulo son:</p>
+      <ul>
+        <li><strong>CXC-MCB:</strong> Este permiso otorga al usuario autorizado la capacidad de modificar las cuentas bancarias de los clientes.</li>
+        <center><img src="img/bancaria/cliente.jpg" alt="foto" style="width: 90%; height: auto; border-radius: 10px;"></center>
+        <li><strong>CXC-MCBEMP</strong> Este permiso otorga al usuario autorizado la capacidad de modificar las cuentas bancarias de aquellos clientes que se encuentren marcados con la clase "EMP".</li>
+        <center><img src="img/bancaria/clie_emple.jpg" alt="foto" style="width: 90%; height: auto; border-radius: 10px;"></center>
+        <p>Si el usuario que ingresa no dispone del permiso correspondiente, la opción aparecerá bloqueada, tal como se ilustra en la imagen:</p>
+        <center><img src="img/bancaria/sin_permiso_cliente.jpg" alt="foto" style="width: 90%; height: auto; border-radius: 10px;"></center>
+      </ul>
     `
   },
   {
