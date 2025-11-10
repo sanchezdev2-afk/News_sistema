@@ -1,6 +1,6 @@
 const cardsData = [
   {
-    title: "Autogestión de Proveedores",
+    title: "1.Autogestión de Proveedores",
     subtitle: "Portal de gestión tributaria autónoma para proveedores",
     icon: "fa-solid fa-truck",
     content: `
@@ -17,7 +17,7 @@ const cardsData = [
     `
   },
   {
-    title: "Cambios en Fiduciaria (Cuentas por Pagar)",
+    title: "2.Cambios en Fiduciaria (Cuentas por Pagar)",
     subtitle: "Nuevo campo para identificación de facturas",
     icon: "fa-solid fa-file-invoice-dollar",
     content: `
@@ -35,7 +35,7 @@ const cardsData = [
     `
   },
   {
-    title: "Pagador Alterno en Pagos de Cuentas por Pagar",
+    title: "3.Pagador Alterno en Pagos de Cuentas por Pagar",
     subtitle: "Identificación individual de facturas con pagador alterno",
     icon: "fa-solid fa-user-tag",
     content: `
@@ -52,7 +52,7 @@ const cardsData = [
     `
   },
   {
-    title: "Diferencia en Cambio Reexpresada",
+    title: "4.Diferencia en Cambio Reexpresada",
     subtitle: "Revisión contable de valores reexpresados en PYG",
     icon: "fa-solid fa-chart-line",
     content: `
@@ -64,7 +64,7 @@ const cardsData = [
     `
   },
   {
-    title: "Diferencia en Cambio Ejecutada",
+    title: "5.Diferencia en Cambio Ejecutada",
     subtitle: "Control reforzado en registros contables de pagos",
     icon: "fa-solid fa-coins",
     content: `
@@ -74,7 +74,7 @@ const cardsData = [
     `
   },
   {
-    title: "Autorizaciones para Actualización de Cuentas Bancarias",
+    title: "6.Autorizaciones para Actualización de Cuentas Bancarias",
     subtitle: "Gestión segura de información financiera de terceros",
     icon: "fa-solid fa-user-shield",
     content: `
@@ -103,10 +103,14 @@ const cardsData = [
         <p>Si el usuario que ingresa no dispone del permiso correspondiente, la opción aparecerá bloqueada, tal como se ilustra en la imagen:</p>
         <center><img src="img/bancaria/sin_permiso_cliente.jpg" alt="foto" style="width: 90%; height: auto; border-radius: 10px;"></center>
       </ul>
+      <p>Se recomienda que las personas que dispongan de ambos permisos efectúen los cambios en la siguiente pantalla:</p>
+      <center><img src="img/bancaria/menu_doble.jpg" alt="foto" style="width: 90%; height: auto; border-radius: 10px;"></center>
+      <p>Dado que en esta pantalla podrán consultar y editar las cuentas bancarias tanto de los clientes como de los proveedores, accediendo a ellas mediante el número de persona, como se ilustra en la imagen.</p>
+      <center><img src="img/bancaria/cuentas_dobles.jpg" alt="foto" style="width: 90%; height: auto; border-radius: 10px;"></center>
     `
   },
   {
-    title: "Límites y Contratos con Autorizaciones en Compras de Servicios",
+    title: "7.Límites y Contratos con Autorizaciones en Compras de Servicios",
     subtitle: "Control de montos y contratos según perfil de usuario",
     icon: "fa-solid fa-file-contract",
     content: `
@@ -118,11 +122,12 @@ const cardsData = [
       </ul>
       <p>El usuario deberá contar con el permiso COM-LOS con moneda y montos definidos para poder realizar el proceso. En caso de no contar con el permiso, el sistema generará el siguiente mensaje:</p>
       <center><img src="img/ordenes/autori_men.jpg" alt="foto" style="width: 100%; height: auto; border-radius: 10px;"></center>
+      <center><img src="img/ordenes/diagrama.jpg" alt="foto" style="width: 100%; height: auto; border-radius: 10px;"></center>
       <h1>Se deja a espera de solución con mensajes de error errados.</h1>
     `
   },
   {
-    title: "Cruce de Traslados entre Terceros",
+    title: "8.Cruce de Traslados entre Terceros",
     subtitle: "Autorización requerida para cruces entre diferentes clientes",
     icon: "fa-solid fa-arrows-left-right",
     content: `
@@ -162,7 +167,7 @@ const cardsData = [
     `
   },
   {
-    title: "Facturación en USD y Envío a DIAN con Copropietarios",
+    title: "9.Facturación en USD y Envío a DIAN con Copropietarios",
     subtitle: "Actualización en la facturación electrónica de vehículos",
     icon: "fa-solid fa-dollar-sign",
     content: `
@@ -171,7 +176,7 @@ const cardsData = [
     `
   },
   {
-    title: "Campo en Tipos de Transacción de Cartera (CXC - Itemizado)",
+    title: "10.Campo en Tipos de Transacción de Cartera (CXC - Itemizado)",
     subtitle: "Control obligatorio de chasis en transacciones específicas",
     icon: "fa-solid fa-receipt",
     content: `
@@ -187,7 +192,7 @@ const cardsData = [
     `
   },
   {
-    title: "Contratos en Módulo Bancos para Anticipos de Proveedores",
+    title: "11.Contratos en Módulo Bancos para Anticipos de Proveedores",
     subtitle: "Integración con contratos de proveedor en el flujo de pagos",
     icon: "fa-solid fa-handshake",
     content: `
@@ -197,7 +202,7 @@ const cardsData = [
     `
   },
   {
-    title: "Módulo de Cajeros - Recibos de Caja Independientes",
+    title: "12.Módulo de Cajeros - Recibos de Caja Independientes",
     subtitle: "Optimización de permisos en el módulo de caja",
     icon: "fa-solid fa-cash-register",
     content: `
@@ -210,7 +215,7 @@ const cardsData = [
     `
   },
   {
-    title: "Marcador de Sesiones Activas en SOCASE",
+    title: "13.Marcador de Sesiones Activas en SOCASE",
     subtitle: "Monitoreo en tiempo real de usuarios conectados",
     icon: "fa-solid fa-network-wired",
     content: `
