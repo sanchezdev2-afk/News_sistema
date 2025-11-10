@@ -3,11 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Novedades Tecnologia</title>
+  <title>Novedades Tecnología</title>
   
   <!-- Incluir FontAwesome desde CDN para la versión 6 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   
+  <!-- Tu hoja de estilos -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,14 +21,20 @@
     <!-- Las tarjetas se generarán aquí con JS -->
   </main>
 
+  <!-- 🔹 Ventana modal para mostrar imágenes en tamaño completo -->
+  <div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <img id="modal-img" class="modal-content" src="" alt="">
+    <div id="caption"></div>
+  </div>
+
   <footer class="footer">
     <p>
-      © 2025 Novedades del sistema — Desarrollado por <strong>Área Tecnologia.</strong>.<br>
+      © 2025 Novedades del sistema — Desarrollado por <strong>Área Tecnología.</strong>.<br>
     </p>
   </footer>
 
+  <!-- Tu script principal -->
   <script src="script.js"></script>
 </body>
 </html>
-
-

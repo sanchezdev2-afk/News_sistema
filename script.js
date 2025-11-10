@@ -227,15 +227,19 @@ const cardsData = [
   }
 ];
 
-// Crear dinámicamente las tarjetas
+// ===========================================
+//  GENERACIÓN DINÁMICA DE TARJETAS
+// ===========================================
 const container = document.getElementById('cards-container');
 
 cardsData.forEach((item, index) => {
   const card = document.createElement('div');
   card.className = 'card';
+
+  // Estructura base
   card.innerHTML = `
     <div class="card-header">
-      <i class="${item.icon} icon"></i> <!-- FontAwesome icon -->
+      <i class="${item.icon} icon"></i>
       <div>
         <h3>${item.title}</h3>
         <p>${item.subtitle}</p>
@@ -245,14 +249,115 @@ cardsData.forEach((item, index) => {
       ${item.content}
     </div>
   `;
+
+  // Evento de abrir/cerrar tarjeta
   card.addEventListener('click', () => toggleContent(index));
+
+  // Evitar cierre al hacer clic en imagen
+  const contentEl = card.querySelector(`#content-${index}`);
+  const imgs = contentEl.querySelectorAll('img');
+
+  imgs.forEach(img => {
+    img.addEventListener('click', (event) => {
+      event.stopPropagation();
+      openModal(img.src, img.alt);
+    });
+  });
+
   container.appendChild(card);
 });
 
-// Mostrar/ocultar contenido
+// ===========================================
+//  ABRIR / CERRAR TARJETAS
+// ===========================================
 function toggleContent(index) {
   const content = document.getElementById(`content-${index}`);
   const isOpen = content.classList.contains('open');
   document.querySelectorAll('.card-content').forEach(c => c.classList.remove('open'));
   if (!isOpen) content.classList.add('open');
+}
+
+// ===========================================
+//  MODAL DE IMAGEN (con zoom de rueda)
+// ===========================================
+const modal = document.getElementById('modal');
+const modalImg = document.getElementById('modal-img');
+const captionText = document.getElementById('caption');
+const closeModal = document.getElementsByClassName('close')[0];
+
+let zoomLevel = 1; // Nivel actual de zoom
+
+function openModal(src, alt) {
+  modal.style.display = 'block';
+  modalImg.src = src;
+  captionText.textContent = alt || '';
+  zoomLevel = 1;
+  modalImg.style.transform = `scale(${zoomLevel})`;
+}
+
+// Cerrar modal al hacer clic en la "X"
+closeModal.onclick = function () {
+  modal.style.display = 'none';
+};
+
+// Cerrar modal al hacer clic fuera de la imagen
+window.onclick = function (event) {
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+};
+
+// 🔍 Manejar el zoom con la rueda del mouse
+modalImg.addEventListener('wheel', function (event) {
+  event.preventDefault();
+  
+  const zoomSpeed = 0.1; // velocidad del zoom
+  if (event.deltaY < 0) {
+    // acercar
+    zoomLevel = Math.min(zoomLevel + zoomSpeed, 3); // máximo 3x
+  } else {
+    // alejar
+    zoomLevel = Math.max(zoomLevel - zoomSpeed, 1); // mínimo 1x
+  }
+
+  modalImg.style.transform = `scale(${zoomLevel})`;
+});
+
+// Permitir arrastrar la imagen si está ampliada
+let isDragging = false;
+let startX, startY, translateX = 0, translateY = 0;
+
+modalImg.addEventListener('mousedown', (e) => {
+  if (zoomLevel > 1) {
+    isDragging = true;
+    startX = e.clientX - translateX;
+    startY = e.clientY - translateY;
+    modalImg.style.cursor = 'grabbing';
+  }
+});
+
+modalImg.addEventListener('mouseup', () => {
+  isDragging = false;
+  modalImg.style.cursor = 'grab';
+});
+
+modalImg.addEventListener('mouseleave', () => {
+  isDragging = false;
+});
+
+modalImg.addEventListener('mousemove', (e) => {
+  if (isDragging && zoomLevel > 1) {
+    translateX = e.clientX - startX;
+    translateY = e.clientY - startY;
+    modalImg.style.transform = `scale(${zoomLevel}) translate(${translateX / zoomLevel}px, ${translateY / zoomLevel}px)`;
+  }
+});
+
+// Reset posición cuando se cierra
+function resetZoomAndPosition() {
+  zoomLevel = 1;
+  translateX = 0;
+  translateY = 0;
+  modalImg.style.transform = 'scale(1)';
+  modalImg.style.cursor = 'zoom-in';
 }
