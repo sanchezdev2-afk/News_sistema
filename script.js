@@ -1,6 +1,6 @@
 const cardsData = [
   {
-    title: "1.Autogestión de Proveedores",
+    title: "1.Autogestión de Proveedores - Área de tesorería - Gerente de Tesorería y Cartera",
     subtitle: "Portal de gestión tributaria autónoma para proveedores",
     icon: "fa-solid fa-truck",
     content: `
@@ -17,7 +17,7 @@ const cardsData = [
     `
   },
   {
-    title: "2.Cambios en Fiduciaria (Cuentas por Pagar)",
+    title: "2.Cambios en Fiduciaria (Cuentas por Pagar) - Área de tesorería - Gerente de Tesorería y Cartera",
     subtitle: "Nuevo campo para identificación de facturas",
     icon: "fa-solid fa-file-invoice-dollar",
     content: `
@@ -35,7 +35,7 @@ const cardsData = [
     `
   },
   {
-    title: "3.Pagador Alterno en Pagos de Cuentas por Pagar",
+    title: "3.Pagador Alterno en Pagos de Cuentas por Pagar - Área de tesorería - Gerente de Tesorería y Cartera",
     subtitle: "Identificación individual de facturas con pagador alterno",
     icon: "fa-solid fa-user-tag",
     content: `
@@ -52,7 +52,7 @@ const cardsData = [
     `
   },
   {
-    title: "4.Diferencia en Cambio Reexpresada",
+    title: "4.Diferencia en Cambio Reexpresada - Área Contraloría financiera - Contralor financiero",
     subtitle: "Revisión contable de valores reexpresados en PYG",
     icon: "fa-solid fa-chart-line",
     content: `
@@ -64,7 +64,7 @@ const cardsData = [
     `
   },
   {
-    title: "5.Diferencia en Cambio Ejecutada",
+    title: "5.Diferencia en Cambio Ejecutada - Área Contraloría financiera - Contralor financiero",
     subtitle: "Control reforzado en registros contables de pagos",
     icon: "fa-solid fa-coins",
     content: `
@@ -74,7 +74,7 @@ const cardsData = [
     `
   },
   {
-    title: "6.Autorizaciones para Actualización de Cuentas Bancarias",
+    title: "6.Autorizaciones para Actualización de Cuentas Bancarias - Área de tesorería - Gerente de Tesorería y Cartera",
     subtitle: "Gestión segura de información financiera de terceros",
     icon: "fa-solid fa-user-shield",
     content: `
@@ -107,10 +107,18 @@ const cardsData = [
       <center><img src="img/bancaria/menu_doble.jpg" alt="foto" style="width: 90%; height: auto; border-radius: 10px;"></center>
       <p>Dado que en esta pantalla podrán consultar y editar las cuentas bancarias tanto de los clientes como de los proveedores, accediendo a ellas mediante el número de persona, como se ilustra en la imagen.</p>
       <center><img src="img/bancaria/cuentas_dobles.jpg" alt="foto" style="width: 90%; height: auto; border-radius: 10px;"></center>
+      <p>Adicionalmente, con el fin de llevar un control y registro detallado de los cambios realizados en estas cuentas bancarias, se implementó el siguiente menú:</p>
+      <center><img src="img/bancaria/aconte_menu.jpg" alt="foto" style="width: 90%; height: auto; border-radius: 10px;"></center>
+      <p>Dentro de ese menú se encontrará la pantalla de acontecimientos, donde podrá consultar los cambios realizados a un proveedor al consultarlo.</p>
+      <center><img src="img/bancaria/acontecimientos.jpg" alt="foto" style="width: 90%; height: auto; border-radius: 10px;"></center>
+      <p><strong>Nota importante:</strong> Esta pantalla guarda únicamente los campos Clase, #Cta. Bancaria, Banco, Tipo cuenta bancaria, Plazo y pagador alterno. Estos campos podrían cambiar a futuro.</p>
+      <p>Los campos que guarda son los siguientes indicados en la imagen:</p>
+      <center><img src="img/bancaria/campos.jpg" alt="foto" style="width: 90%; height: auto; border-radius: 10px;"></center>
+
     `
   },
   {
-    title: "7.Límites y Contratos con Autorizaciones en Compras de Servicios",
+    title: "7.Límites y Contratos con Autorizaciones en Compras de Servicios - Área Contraloría financiera - Contralor financiero",
     subtitle: "Control de montos y contratos según perfil de usuario",
     icon: "fa-solid fa-file-contract",
     content: `
@@ -127,7 +135,7 @@ const cardsData = [
     `
   },
   {
-    title: "8.Cruce de Traslados entre Terceros",
+    title: "8.Cruce de Traslados entre Terceros - Área Contraloría financiera - Contralor financiero",
     subtitle: "Autorización requerida para cruces entre diferentes clientes",
     icon: "fa-solid fa-arrows-left-right",
     content: `
@@ -167,7 +175,7 @@ const cardsData = [
     `
   },
   {
-    title: "9.Facturación en USD y Envío a DIAN con Copropietarios",
+    title: "9.Facturación en USD y Envío a DIAN con Copropietarios - Área Impuestos - Gerente de Impuestos",
     subtitle: "Actualización en la facturación electrónica de vehículos",
     icon: "fa-solid fa-dollar-sign",
     content: `
@@ -176,7 +184,7 @@ const cardsData = [
     `
   },
   {
-    title: "10.Campo en Tipos de Transacción de Cartera (CXC - Itemizado)",
+    title: "10.Campo en Tipos de Transacción de Cartera (CXC - Itemizado) - Área Contraloría financiera - Contralor financiero",
     subtitle: "Control obligatorio de chasis en transacciones específicas",
     icon: "fa-solid fa-receipt",
     content: `
@@ -192,7 +200,7 @@ const cardsData = [
     `
   },
   {
-    title: "11.Contratos en Módulo Bancos para Anticipos de Proveedores",
+    title: "11.Contratos en Módulo Bancos para Anticipos de Proveedores - Área Contraloría financiera - Contralor financiero",
     subtitle: "Integración con contratos de proveedor en el flujo de pagos",
     icon: "fa-solid fa-handshake",
     content: `
@@ -202,7 +210,7 @@ const cardsData = [
     `
   },
   {
-    title: "12.Módulo de Cajeros - Recibos de Caja Independientes",
+    title: "12.Módulo de Cajeros - Recibos de Caja Independientes - Área Contraloría financiera - Contralor financiero",
     subtitle: "Optimización de permisos en el módulo de caja",
     icon: "fa-solid fa-cash-register",
     content: `
@@ -215,7 +223,7 @@ const cardsData = [
     `
   },
   {
-    title: "13.Marcador de Sesiones Activas en SOCASE",
+    title: "13.Marcador de Sesiones Activas en SOCASE - Área Tecnología - Director TIC",
     subtitle: "Monitoreo en tiempo real de usuarios conectados",
     icon: "fa-solid fa-network-wired",
     content: `
